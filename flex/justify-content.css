@@ -1,0 +1,24 @@
+/* 左对齐 默认 */
+.box-flex-start {
+  justify-content: flex-start;
+}
+
+/* 右对齐 */
+.box-flex-end {
+  justify-content: flex-end;
+}
+
+/* 居中 */
+.box-flex-center {
+  justify-content: center;
+}
+
+/* 两端对齐，项目之间的间隔都相等 */
+.box-flex-space-between {
+  justify-content: space-between;
+}
+
+/* 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。 */
+.box-flex-space-around {
+  justify-content: space-around;
+}

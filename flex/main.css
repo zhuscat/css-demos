@@ -1,0 +1,26 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 16px;
+  background-color: #d9d9d9;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.box {
+  /* webkit 内核浏览器 */
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* 行内元素也可以使用 flex 布局 */
+.box-inline {
+  display: inline-flex;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: orange;
+}

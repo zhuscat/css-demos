@@ -1,0 +1,19 @@
+/* nowrap 超过宽度之后会压缩 item 自己的宽度 */
+.box-nowrap {
+  flex-wrap: nowrap;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.box-wrap {
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* 换行，第一行在下面，以此类推 */
+.box-wrap-reverse {
+  flex-wrap: wrap-reverse;
+  display: -webkit-flex;
+  display: flex;
+}

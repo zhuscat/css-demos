@@ -1,0 +1,5 @@
+/* flex-flow 是 flex-direction 和 flex-wrap 的缩写形式 */
+.box-row-nowrap {
+  flex-flow: row nowrap;
+  display: flex;
+}

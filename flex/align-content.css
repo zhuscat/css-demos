@@ -1,0 +1,35 @@
+.box-flex-start {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.box-flex-end {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.box-center {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.box-space-between {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.box-space-around {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.box-stretch {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}

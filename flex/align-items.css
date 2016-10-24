@@ -1,0 +1,23 @@
+/* align-items 定义项目在交叉轴上面如何对齐 */
+.box-flex-start {
+  align-items: flex-start;
+}
+
+.box-flex-end {
+  align-items: flex-end;
+}
+
+/* 所有项目在一根轴上对齐 */
+.box-center {
+  align-items: center;
+}
+
+/* 基于文字的基线 */
+.box-baseline {
+  align-items: baseline;
+}
+
+/* strech 下高度要是 auto 或者没有设置的情况下才会在高度上填充完全 */
+.box-stretch {
+  align-items: stretch;
+}
