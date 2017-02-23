@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>双飞翼布局</title>
+    <meta charset="UTF-8">
+    <style>
+      .main-wrapper {
+        float: left;
+        width: 100%;
+      }
+
+      .main {
+        height: 300px;
+        margin-left: 210px;
+        margin-right: 210px;
+        background-color: steelblue;
+      }
+
+      .sub {
+        float: left;
+        width: 200px;
+        height: 300px;
+        margin-left: -100%;
+        background-color: deepskyblue;
+      }
+
+      .extra {
+        float: left;
+        width: 200px;
+        height: 300px;
+        margin-left: -200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="main">main</div>
+    </div>
+    <div class="sub">sub</div>
+    <div class="extra">extra</div>
+  </body>
+</html>

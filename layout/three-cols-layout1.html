@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>圣杯布局</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        padding-left: 210px;
+        padding-right: 210px;
+      }
+
+      .main {
+        float: left;
+        width: 100%;
+        height: 300px;
+        background-color: steelblue;
+      }
+
+      .sub {
+        position: relative;
+        left: -210px;
+        float: left;
+        width: 200px;
+        height: 300px;
+        margin-left: -100%;
+        background-color: deepskyblue;
+      }
+
+      .extra {
+        position: relative;
+        right: -210px;
+        float: left;
+        width: 200px;
+        height: 300px;
+        margin-left: -200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">主列</div>
+      <div class="sub">子列</div>
+      <div class="extra">附加列</div>
+    </div>
+  </body>
+</html>
