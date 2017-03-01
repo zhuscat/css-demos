@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flex版三栏布局</title>
+    <meta charset="UTF-8">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      header, footer {
+        background-color: lightgray;
+        flex: 0 0 200px;
+      }
+
+      .body {
+        display: flex;
+        flex: 1;
+      }
+
+      .content {
+        flex: 1;
+      }
+
+      .nav, .aside {
+        flex: 0 0 12em;
+        background-color: deepskyblue;
+      }
+
+      .nav {
+        background-color: cadetblue;
+        order: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <div class="body">
+        <main class="content"></main>
+        <nav class="nav"></nav>
+        <aside class="aside"></aside>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>
