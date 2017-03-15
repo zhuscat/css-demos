@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+  <script>
+    // 使用 transform 更好
+    var canMove = false;
+    var currX = 0;
+    var currY = 0;
+    var el = document.getElementsByClassName('box')[0];
+    var wrapper = document.getElementById('wrapper');
+    el.addEventListener('touchstart', function(event) {
+      var touches = event.touches;
+      currX = touches[0].pageX;
+      currY = touches[0].pageY;
+      canMove = true;
+    });
+
+    wrapper.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+      if (canMove) {
+        var touches = event.touches;
+        var deltaX = touches[0].pageX - currX;
+        var deltaY = touches[0].pageY - currY;
+        currX = touches[0].pageX;
+        currY = touches[0].pageY;
+        var left = Number.parseInt(document.defaultView.getComputedStyle(el).left);
+        var top = Number.parseInt(document.defaultView.getComputedStyle(el).top);
+        el.style.left = (left + deltaX) + 'px';
+        el.style.top = (top + deltaY) + 'px';
+      }
+    });
+
+    el.addEventListener('touchend', function() {
+      canMove = false;
+    });
+
+    el.addEventListener('touchcancel', function() {
+      canMove = false;
+    });
+  </script>
+</html>

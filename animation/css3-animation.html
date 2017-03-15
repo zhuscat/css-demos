@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+      @keyframes change {
+        from {
+          width: 100px;
+          height: 100px;
+          background-color: blue;
+        }
+
+        to {
+          width: 10px;
+          height: 10px;
+          background-color: red;
+        }
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: change;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      .box:hover {
+        animation-play-state: running;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .box {
+        background-color: red;
+        height: 1000px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+  <script>
+    document.addEventListener('touchstart', function(event) {
+      event.preventDefault();
+      event.stopPropagation()
+    });
+
+    document.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+      event.stopPropagation()
+    });
+
+    document.addEventListener('touchend', function(event) {
+      event.preventDefault();
+      event.stopPropagation()
+    });
+
+    document.addEventListener('touchcancel', function(event) {
+      event.preventDefault();
+      event.stopPropagation()
+    });
+  </script>
+</html>

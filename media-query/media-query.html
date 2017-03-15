@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .box {
+        background-color: orange;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .box {
+        background-color: yellow;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .box {
+        background-color: green;
+      }
+    }
+
+    @media only screen and (-webkit-device-pixel-ratio: 3) {
+      .box {
+        background-color: blue;
+      }
+    }
+
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
